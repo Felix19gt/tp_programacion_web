@@ -38,6 +38,11 @@ nav a {
     color: #333;
     text-decoration: none;
 }
+nav a:hover{
+    background-color: #e5e5e5; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    cursor: pointer; 
+}
 
 .contenido {
     padding: 35px;
@@ -88,13 +93,21 @@ nav a {
     justify-content: center;
 }
 
-.productos button {
+.productos a {
+    text-decoration: none;
+    text-align: center;
     margin-top: 15px;
     padding: 10px;
     background-color: #315bea;
     border: none;
     border-radius: 5px;
     color: white;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.productos a:hover{
+    background-color: blue; 
+    box-shadow: 0px 4px 12px rgba(26, 86, 219, 0.3); 
+    cursor: pointer
 }
 
 @media (max-width: 768px) {
@@ -111,8 +124,9 @@ nav a {
     .barra {
         height: auto;
         padding: 15px;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
         gap: 15px;
     }
 
@@ -121,7 +135,7 @@ nav a {
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: row;
         gap: 8px;
     }
 
