@@ -1,3 +1,10 @@
+@view-transition {
+    navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root){
+    animation-duration: 0.2s;
+}
 * {
     box-sizing: border-box;
 }
@@ -145,5 +152,136 @@ nav a:hover{
 
     .productos {
         grid-template-columns: 1fr;
+    }
+}
+
+/*ESCUDO, EXP, VIDA HTM*/
+
+
+.principal {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 1fr;
+}
+
+.barra {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #315bea;
+}
+
+.barra nav {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+.barra nav a {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    gap: 2px;
+}
+.barra nav a:hover{
+    background-color: #e5e5e5; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    cursor: pointer; 
+}
+
+
+.datos {
+    font-size: 14px;
+}
+
+.alerta-exito {
+  background-color: #e6f4ea; /* Verde muy suave */
+  border: 1px solid #b7e1cd;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #137333;
+}
+
+.alerta-exito p {
+  margin: 4px 0 0 0;
+  font-size: 0.9rem;
+  color: #3c4043;
+}
+
+.icono-exito {
+  font-size: 1.5rem;
+}
+
+.tarjeta-producto{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 60px;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+.tarjeta-producto h2{
+    display: flex;
+    flex-grow: 1;
+    color: #ddd;
+}
+.tarjeta-producto .escudo{
+    display: flex;
+    flex-grow: 1;
+    font-size: 200px;
+    filter: drop-shadow(0 0 35px rgb(40, 216, 49));
+
+}
+/* .btn-comprado{
+    background-color: rgba(255, 0, 0, 0.652);
+    color: #e6f4ea;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+} */
+ .btn-comprado {
+    background-color: #333333;
+    color: #aaaaaa;
+    border: 1px solid #555555;
+    cursor: not-allowed;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+}
+@media (max-width: 768px) {
+    .barra {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 8px;
+    }
+    .barra nav{
+        gap: 6px;
+    }
+}
+@media (max-width: 576px) {
+    .barra {
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        padding: 25px;
+    }
+
+    .barra nav {
+        flex-direction: row;
+        gap: 8px;
     }
 }

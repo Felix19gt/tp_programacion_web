@@ -1,3 +1,10 @@
+@view-transition {
+    navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root){
+    animation-duration: 0.2s;
+}
 * {
     box-sizing: border-box;
 }
@@ -90,6 +97,38 @@ nav a:hover{
 .ajustes form select {
     margin-top: 5px;
     padding: 10px;
+}
+
+.pafarro{
+    margin: 10px 0;
+}
+summary{
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.653);
+    padding:10px;
+    font-size: 13px;
+    
+}
+
+.selector-idioma ul {
+    font-size: 13px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para los enlaces de idioma */
+.selector-idioma a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Efecto visual al pasar el mouse por encima */
+.selector-idioma a:hover {
+    background-color: rgb(88, 88, 245);
 }
 
 .botones {

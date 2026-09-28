@@ -37,22 +37,26 @@
 
                 <h2>Cambiar Contraseña:</h2>
                 <form action="perfil.html" method="get">
-                <label>Contraseña actual:</label>
-                <input type="password" required>
+                <label for="contrasenia">Contraseña actual:</label>
+                <input type="password" id="contrasenia" required>
 
-                <label>Nueva contraseña:</label>
-                <input type="password" required>
+                <label for="nueva_contrasenia" >Nueva contraseña:</label>
+                <input type="password" id="nueva_contrasenia" required>
 
-                <label>Confirmar contraseña:</label>
-                <input type="password" required>
+                <label for="confirmar_contrasenia" >Confirmar contraseña:</label>
+                <input type="password" id="confirmar_contrasenia" required>
 
-                <label>Idioma principal de interfaz:</label>
-                <select>
-                    <option>Español</option>
-                    <option>Inglés</option>
-                    <option>Alemán</option>
-                    <option>Chino</option>
-                </select>
+                <p class="pafarro">Idioma principal de interfaz:</p>
+                    <details class="selector-idioma">
+                        <summary>Español</summary>
+                        <ul>
+                            <li><a class="idioma"  href="perfil.html">Español</a></li>
+                            <li><a class="idioma" href="Ingles/perfil.html">Ingles</a></li>
+                            <li><a class="idioma" href="aleman/perfil.html">Alemán</a></li>
+                            <li><a class="idioma" href="chino/perfil.html">Chino</a></li>
+                        </ul>
+                    </details>
+
 
                 <div class="botones">
                     <button type="submit">Guardar Cambios</button>
