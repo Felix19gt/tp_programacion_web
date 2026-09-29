@@ -66,6 +66,31 @@ nav a:hover{
     color: #315bea;
     text-decoration: none;
 }
+summary{
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.653);
+    padding:10px;
+    font-size: 13px;
+}
+
+.selector ul {
+    font-size: 13px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+
+.selector a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.selector a:hover {
+    background-color: #315bea;
+}
 
 .unidad {
     margin-top: 25px;
@@ -74,6 +99,7 @@ nav a:hover{
     border-radius: 10px;
     padding: 25px;
 }
+
 
 .lecciones {
     display: flex;
