@@ -12,13 +12,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f7fb;
+    background-color: #f4f7fb; 
 }
 
 .pagina {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-rows: 80px 1fr;
 }
 
 .barra {

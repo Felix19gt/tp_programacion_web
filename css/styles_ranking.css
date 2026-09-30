@@ -27,28 +27,36 @@ body {
     display: flex;
     align-items: center;
     padding: 0 30px;
+    gap: 30px;
 }
 
 .logo {
     font-size: 25px;
     font-weight: bold;
     color: #315bea;
-    margin-right: 50px;
 }
 
-nav {
+.barra nav {
     display: flex;
-    gap: 25px;
+    gap: 20px;
+    flex: 1;
 }
 
-nav a {
-    color: #333;
+.barra nav a {
+    display: flex;
     text-decoration: none;
+    color: #333;
+    gap: 2px;
 }
-nav a:hover{
+.barra nav a:hover{
     background-color: #e5e5e5; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
     cursor: pointer; 
+}
+
+
+.datos {
+    font-size: 14px;
 }
 
 .ranking {
